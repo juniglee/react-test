@@ -1,0 +1,98 @@
+.FlipCard {
+    padding: 0;
+    transform-style: preserve-3d;
+    border: 0;
+    perspective: 1000px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &--secondary {
+        .FlipCard-back {
+            background: $color-secondary-dark;
+        }
+    }
+
+    &-is-flipped {
+        .FlipCard-back {
+            transform: rotateY(0deg);
+        }
+
+        .FlipCard-front {
+            transform: rotateY(180deg);
+        }
+    }
+
+    &-inner {
+        position: relative;
+        width: 100%;
+        transform-style: preserve-3d;
+        transition: transform .6s;
+    }
+
+    &-front {
+        transform: rotateY(0deg);
+        border: $border-default;
+        background: $color-mono-xxxlight;
+        z-index: 2;
+    }
+
+    &-back {
+        transform: rotateY(180deg);
+        background: $color-mono-xdark;
+        color: $color-mono-xxxlight;
+
+        .FlipCard-title {
+            color: $color-mono-xxxlight;
+        }
+    }
+
+    &-face {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: inherit;
+        padding: 1rem;
+        transform-style: preserve-3d;
+        transition: transform .6s;
+        backface-visibility: hidden;
+    }
+
+    &-rotate {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: color .15s ease;
+        color: $color-mono-xxxlight;
+        font-family: $icon-family;
+        font-size: 24px;
+        line-height: 1;
+
+        &::after {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-width: 0 50px 50px 0;
+            border-style: solid;
+            border-color: transparent $color-secondary-xdark transparent transparent;
+            content: '';
+            z-index: 0;
+        }
+
+        &::before {
+            display: block;
+            position: relative;
+            padding-top: 4px;
+            padding-right: 2px;
+            content: '\e941';
+            z-index: 1;
+        }
+    }
+}

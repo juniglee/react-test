@@ -1,0 +1,389 @@
+@font-face {
+    font-family: 'wn-icomoon';
+    font-style: normal;
+    font-weight: normal;
+    src:  url('//cdn.worldnomads.net/Themes/NomadsFoundation/Styles/fonts/wn-icomoon.xoczs5?s0skli');
+    src:  url('//cdn.worldnomads.net/Themes/NomadsFoundation/Styles/fonts/wn-icomoon.xoczs5?s0skli#iefix') format('embedded-opentype'),
+    url('//cdn.worldnomads.net/Themes/NomadsFoundation/Styles/fonts/wn-icomoon.ttf?xoczs5') format('truetype'),
+    url('//cdn.worldnomads.net/Themes/NomadsFoundation/Styles/fonts/wn-icomoon.woff?xoczs5') format('woff'),
+    url('//cdn.worldnomads.net/Themes/NomadsFoundation/Styles/fonts/wn-icomoon.svg?xoczs5#wn-icomoon') format('svg');
+}
+
+[class^="icon-wn-"], [class*=" icon-wn-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'wn-icomoon' !important;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: none;
+    speak: none;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wn-extreme::before {
+    content: "\e937";
+}
+
+.icon-wn-medical-emergency::before {
+    content: "\e939";
+}
+
+.icon-wn-air::before {
+    content: "\e938";
+}
+
+.icon-wn-reload::before {
+    content: "\e941";
+}
+
+.icon-wn-info::before {
+    content: "\e940";
+}
+
+.icon-wn-star::before {
+    content: "\e942";
+}
+
+.icon-wn-ball::before {
+    content: "\e921";
+}
+
+.icon-wn-bike::before {
+    content: "\e922";
+}
+
+.icon-wn-flag-race::before {
+    content: "\e933";
+}
+
+.icon-wn-mountain::before {
+    content: "\e934";
+}
+
+.icon-wn-snowflake::before {
+    content: "\e935";
+}
+
+.icon-wn-wave::before {
+    content: "\e936";
+}
+
+.icon-wn-heli::before {
+    content: "\e920";
+}
+
+.icon-wn-book::before {
+    content: "\e918";
+}
+
+.icon-wn-see::before {
+    content: "\e915";
+}
+
+.icon-wn-backpack::before {
+    content: "\e914";
+}
+
+.icon-wn-play::before {
+    content: "\e910";
+}
+
+.icon-wn-download::before {
+    content: "\e90e";
+}
+
+.icon-wn-film::before {
+    content: "\e903";
+}
+
+.icon-wn-writing::before {
+    content: "\e90a";
+}
+
+.icon-wn-globe::before {
+    content: "\e980";
+}
+
+.icon-wn-mobile::before {
+    content: "\e981";
+}
+
+.icon-wn-insider-guide::before {
+    content: "\e902";
+}
+
+.icon-wn-plus::before {
+    content: "\f067";
+}
+
+.icon-wn-attach::before {
+    content: "\e90f";
+}
+
+.icon-wn-chevron-right::before {
+    content: "\f054";
+}
+
+.icon-wn-chevron-down {
+    transform: rotate(90deg);
+
+    &::before {
+        content: "\f054";
+    }
+}
+
+.icon-wn-minus::before {
+    content: "\f068";
+}
+
+.icon-wn-credit-card::before {
+    content: "\e904";
+}
+
+.icon-wn-edit::before {
+    content: "\e905";
+}
+
+.icon-wn-cart::before {
+    content: "\e906";
+}
+
+.icon-wn-file::before {
+    content: "\e907";
+}
+
+.icon-wn-folder::before {
+    content: "\e908";
+}
+
+.icon-wn-forbidden::before {
+    content: "\e909";
+}
+
+.icon-wn-bars::before, .icon-wn-navicon::before, .icon-wn-reorder::before {
+    content: "\f0c9";
+}
+
+.icon-wn-link::before {
+    content: "\e90b";
+}
+
+.icon-wn-print::before {
+    content: "\e90c";
+}
+
+.icon-wn-question::before {
+    content: "\e90d";
+}
+
+.icon-wn-quotes-left::before {
+    content: "\e900";
+}
+
+.icon-wn-quotes-right::before {
+    content: "\e901";
+}
+
+.icon-wn-close::before {
+    content: "\f00d";
+}
+
+.icon-wn-search::before {
+    content: "\e911";
+}
+
+.icon-wn-settings::before {
+    content: "\e912";
+}
+
+.icon-wn-share::before {
+    content: "\e913";
+}
+
+.icon-wn-check::before {
+    content: "\f00c";
+}
+
+.icon-wn-exclamation-triangle::before, .icon-wn-warning::before {
+    content: "\f071";
+}
+
+.icon-wn-calendar::before {
+    content: "\e916";
+}
+
+.icon-wn-flight::before {
+    content: "\e917";
+}
+
+.icon-wn-location::before {
+    content: "\e947";
+}
+
+.icon-wn-luggage::before {
+    content: "\e919";
+}
+
+.icon-wn-navigation::before {
+    content: "\e91a";
+}
+
+.icon-wn-paper-plane::before {
+    content: "\e91b";
+}
+
+.icon-wn-pin::before {
+    content: "\e91c";
+}
+
+.icon-wn-tag::before {
+    content: "\e91d";
+}
+
+.icon-wn-world::before {
+    content: "\e91e";
+}
+
+.icon-wn-cook-book::before {
+    content: "\e91f";
+}
+
+.icon-wn-picture::before {
+    content: "\e923";
+}
+
+.icon-wn-time::before {
+    content: "\e924";
+}
+
+.icon-wn-travel-photo::before {
+    content: "\e925";
+}
+
+.icon-wn-wallet::before {
+    content: "\e926";
+}
+
+.icon-wn-bubbles::before {
+    content: "\e927";
+}
+
+.icon-wn-call::before {
+    content: "\e928";
+}
+
+.icon-wn-email::before {
+    content: "\e929";
+}
+
+.icon-wn-favourite::before {
+    content: "\e92a";
+}
+
+.icon-wn-notification::before {
+    content: "\e92b";
+}
+
+.icon-wn-user::before {
+    content: "\e92c";
+}
+
+.icon-wn-fire::before {
+    content: "\e92d";
+}
+
+.icon-wn-illness::before {
+    content: "\e92e";
+}
+
+.icon-wn-health::before {
+    content: "\e92f";
+}
+
+.icon-wn-shield::before {
+    content: "\e930";
+}
+
+.icon-wn-award::before {
+    content: "\e931";
+}
+
+.icon-wn-instagram::before {
+    content: "\ea92";
+}
+
+.icon-wn-youtube::before {
+    content: "\ea9d";
+}
+
+.icon-wn-vimeo::before {
+    content: "\eaa0";
+}
+
+.icon-wn-flickr::before {
+    content: "\eaa3";
+}
+
+.icon-wn-umbrella::before {
+    content: "\e617";
+}
+
+.icon-wn-trifold::before {
+    content: "\e629";
+}
+
+.icon-wn-thumbup::before {
+    content: "\e62f";
+}
+
+.icon-wn-heart::before {
+    content: "\e635";
+}
+
+.icon-wn-roaddirections::before {
+    content: "\e63e";
+}
+
+.icon-wn-lightbulb::before {
+    content: "\e644";
+}
+
+.icon-wn-speachbubble::before {
+    content: "\e645";
+}
+
+.icon-wn-home::before {
+    content: "\e932";
+}
+
+.icon-wn-twitter::before {
+    content: "\f099";
+}
+
+.icon-wn-facebook::before {
+    content: "\f09a";
+}
+
+.icon-wn-google-plus::before {
+    content: "\f0d5";
+}
+
+.icon-wn-linkedin::before {
+    content: "\f0e1";
+}
+
+.icon-wn-angle-right::before {
+    content: "\f105";
+}
+
+.icon-wn-stumbleupon::before {
+    content: "\f1a4";
+}
+
+.icon-wn-pinterest-p::before {
+    content: "\f231";
+}

@@ -1,0 +1,51 @@
+// Based on the Foundation 6 callout component
+
+.callout {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border: $border-default;
+    background-color: $color-mono-xxxlight;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    label,
+    p {
+        color: inherit;
+    }
+
+    &.light,
+    &.validation {
+        background-color: $body-color-dark;
+    }
+
+    &.secondary {
+        border-color: $color-secondary-light;
+        background-color: $color-secondary-xlight;
+    }
+
+    &.validation {
+        border: 0;
+        color: $color-error;
+    }
+
+    &.reverse {
+        border: 0;
+        background-color: $color-mono-xdark;
+        color: $color-mono-xxxlight;
+
+        > a {
+            color: $color-mono-xxxlight;
+        }
+    }
+
+    &.validation,
+    &.reverse {
+        > a {
+            text-decoration: underline;
+        }
+    }
+}

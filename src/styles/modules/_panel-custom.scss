@@ -1,0 +1,48 @@
+// Custom override of the Founcation Callout component
+
+.panel {
+    border: $border-default;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    label,
+    p {
+        color: inherit;
+    }
+
+    > a {
+        text-decoration: underline;
+    }
+
+    &.secondary,
+    &.validation {
+        background-color: $body-color-dark;
+    }
+
+    &.validation {
+        border: 0;
+        color: $color-error;
+    }
+
+    &.reverse {
+        border: 0;
+        background-color: $color-mono-xdark;
+        color: $color-mono-xxxlight;
+    }
+
+    &.transparent {
+        background-color: transparent;
+    }
+
+    &.centered {
+        text-align: center;
+    }
+
+    &.fullwidth {
+        width: 100%;
+    }
+}

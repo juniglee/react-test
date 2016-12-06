@@ -1,0 +1,58 @@
+.Hero {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background-color: $color-mono-dark;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-ContentPanel {
+        margin-bottom: 0;
+        background-position: center;
+        background-size: cover;
+        color: $color-mono-xxxlight;
+    }
+
+    &-Video {
+        &-Content {
+            text-align: left;
+
+            h1, h4 {
+                position: relative;
+                margin-bottom: 36px;
+                color: $color-mono-xxxlight;
+                z-index: 800;
+            }
+
+            p {
+                position: relative;
+                margin-top: -350px;
+                color: $color-mono-xxxlight;
+                z-index: 800;
+            }
+
+            a {
+                display: inline-block;
+                position: relative;
+                z-index: 999;
+            }
+        }
+    }
+
+    @media #{$medium-up} {
+        display: block;
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+
+    &-copy {
+        color: $color-mono-xxxlight;
+    }
+
+    &-breadcrumb {
+        margin-bottom: 1rem;
+    }
+
+    .Hero-links {
+        color: $color-mono-xxxlight;
+    }
+}

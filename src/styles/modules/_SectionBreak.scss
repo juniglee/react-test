@@ -1,0 +1,37 @@
+// World Nomads section line break module
+
+.SectionBreak {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-width: 8px 0 0;
+    border-style: solid;
+    border-color: $border-color;
+
+    @media #{$medium-up} {
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+
+    @media #{$large} {
+        margin-top: 2.5rem;
+    }
+
+    &--sml {
+        margin-top: .8rem;
+        padding-top: .8rem;
+        border-top-width: 1px;
+
+        @media #{$medium-up} {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+        }
+    }
+
+    &--is-first { // 1.
+        margin-top: 0;
+    }
+
+    &--secondary {
+        border-color: $color-secondary-light;
+    }
+}

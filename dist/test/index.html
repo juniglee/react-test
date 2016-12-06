@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Test Looper</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" type="text/javascript"></script>
+</head>
+
+<body class="cms borderless" data-feedly-mini="yes">
+    <h1>Final Fantasy XV hype!</h1>
+
+    <p>The game is now out for <span id="game-out"></span>.</p>
+
+    <script type="text/javascript">
+        var localDate = new Date();
+        var localMoment = moment();
+        var utcMoment = moment.utc();
+        var utcDate = new Date( utcMoment.format() );
+
+        //These are all the same
+        console.log( 'localData unix = ' + localDate.valueOf() );
+        console.log( 'localMoment unix = ' + localMoment.valueOf() );
+        console.log( 'utcMoment unix = ' + utcMoment.valueOf() );
+
+        //These formats are different
+        console.log( 'localDate = ' + localDate );
+        console.log( 'localMoment string = ' + localMoment.format() );
+        console.log( 'utcMoment string = ' + utcMoment.format() );
+        console.log( 'utcDate  = ' + utcDate );
+
+        //One to show conversion
+        console.log( 'localDate as UTC format = ' + moment.utc( localDate ).format() );
+        console.log( 'localDate as UTC unix = ' + moment.utc( localDate ).valueOf() );
+
+        $('#game-out').html(moment("20161129 09:00:00", "YYYYMMDD HH:mm:ss").fromNow());
+    </script>
+</body>
+</html>

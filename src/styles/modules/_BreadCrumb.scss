@@ -1,0 +1,47 @@
+//BreadCrumb module
+
+// 1. Need to deprecate .BreadCrumb variant
+// 2. Need to deprecate --reverse variant
+
+.BreadCrumb, //1
+.BreadCrumbs {
+    margin: 0;
+    padding-left: 0;
+    line-height: 1.5rem;
+    list-style: none;
+
+    &--reverse, // 2.
+    &--alt {
+        color: $color-mono-xxxlight;
+
+        > li {
+            > a {
+                color: inherit;
+                text-decoration: underline;
+            }
+
+            &:last-child {
+                > a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    > li {
+        display: inline-block;
+
+        &::after {
+            position: relative;
+            top: 1px;
+            left: 2px;
+            margin: 0 12px;
+            font-family: 'wn-icomoon';
+            content: '\f105';
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+    }
+}

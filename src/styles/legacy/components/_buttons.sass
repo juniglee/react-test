@@ -1,0 +1,167 @@
+
+.base-button
+  +border-radius(3px)
+  font-size: rem-calc(18)
+  font-weight: $default-font-weight
+  color: $color-mono-xxxlight
+  padding: 6px 44px 7px 15px
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)
+  cursor: pointer
+  position: relative
+  width: initial
+  display: inline-block
+  margin-bottom: 0
+  text-align: left
+
+
+  &:after
+    content: '\e60d'
+    font-family: WNI
+    font-size: 24px
+    position: absolute
+    top: 4px
+    right: 6px
+  &:hover, &:visited
+    color: #ffffff
+    text-decoration: none
+
+  &.large
+    font-size: rem-calc(24)
+    padding: 8px 50px 8px 24px
+    &:after
+      top: 12px
+  &.small
+    line-height: 1
+    padding: 9px 30px 9px 12px
+    font-size: 14px
+  // full width button
+  &.expand
+    width: 100%
+    padding: 4px 44px 4px 15px
+
+  // Button colours
+  &.orange
+    +gradient-button($color-primary)
+    border: 1px solid darken($color-primary, 10%)
+    &:hover
+      +gradient-button(darken($color-primary, 10%))
+
+  &.light-grey
+    +gradient-button($color-mono-xxlight)
+    color: $color-mono-dark
+    border: 1px solid darken($color-mono-xxlight, 10%)
+    &:hover
+      +gradient-button(darken($color-mono-xxlight, 10%))
+      color: $color-mono-dark
+
+  &.grey
+    +gradient-button($color-mono-dark)
+    border: 1px solid darken($color-mono-dark, 10%)
+    &:hover
+      +gradient-button(darken($color-mono-dark, 10%))
+
+  &.blue
+    +gradient-button($color-secondary)
+    border: 1px solid darken($color-secondary, 10%)
+    &:hover
+      +gradient-button(darken($color-secondary, 10%))
+
+  &.red
+    +gradient-button($color-quinary)
+    border: 1px solid darken($color-quinary, 10%)
+    &:hover
+      +gradient-button(darken($color-quinary, 10%))
+
+  &.teal
+    +gradient-button($color-tertiary)
+    border: 1px solid darken($color-tertiary, 10%)
+    &:hover
+      +gradient-button(darken($color-tertiary, 10%))
+
+  &.purple
+    +gradient-button($color-quarternary)
+    border: 1px solid darken($color-quarternary, 10%)
+    &:hover
+      +gradient-button(darken($color-quarternary, 10%))
+
+  &.white
+    +gradient-button($color-mono-xxxlight)
+    border: 1px solid darken($color-mono-xxxlight, 10%)
+    color: $font-color
+    text-shadow: none
+    &:hover
+      +gradient-button(darken($color-mono-xxxlight, 10%))
+
+  &a, &a:visited, a, a:visited
+    color: $color-mono-xxxlight
+
+.base-button
+  &.base-button--alt
+    padding-left: 18px
+    padding-right: 18px
+    background: none
+    transition: all 0.08s ease-in-out
+    text-shadow: none
+
+    &:after
+      content: none
+
+    &.white
+      border: 1px solid $color-mono-xxxlight
+      color: $color-mono-xxxlight
+
+      &:hover
+        background: $color-mono-xxxlight
+        border: 1px solid $color-mono-xxxlight
+        color: $font-color
+
+    &.grey
+      border: 1px solid $font-color
+      color: $font-color
+
+      &:hover
+        background: $font-color
+        border: 1px solid $font-color
+        color: $color-mono-xxxlight
+
+
+
+// overwrite default cta styles
+.cta-button-primary
+  +border-radius(3px)
+  font-size: rem-calc(18)
+  line-height:   32px
+  font-weight: $default-font-weight
+  color: $color-mono-xxxlight
+  padding: 4px 44px 4px 15px
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)
+  cursor: pointer
+  position: relative
+  width: initial
+  display: inline-block
+  margin-bottom: 0
+  text-align: left
+  +gradient-button($color-primary)
+  border: 1px solid darken($color-primary, 10%)
+  &:hover
+    +gradient-button(darken($color-primary, 10%))
+  &:after
+    content: '\e60d'
+    font-family: WNI
+    font-size: 24px
+    position: absolute
+    top: 4px
+    right: 6px
+
+  &:hover, &:visited
+    color: #ffffff
+    text-decoration: none
+
+  // TODO: temp fix for legacy pages need to update class ref to base-button
+  &.grey
+    font-size: rem-calc(18)
+    line-height: rem-calc(32)
+    +gradient-button($color-mono-dark)
+    border: 1px solid darken($color-mono-dark, 10%)
+    &:hover
+      +gradient-button(darken($color-mono-dark, 10%))

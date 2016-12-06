@@ -1,0 +1,44 @@
+#twofeature
+  //TODO: Background image ref need rewriting to use panel component
+  background-image: url("https://cdn.worldnomads.net/Media/Default/images/Pattern/wn-pattern-bg-red.jpg")
+  background-size: cover
+  background-position: center
+  width: 100%
+  display: block
+  padding-top: 16px
+  margin-top: 20px;
+  margin-bottom: 0px
+  ul.breadcrumb
+    margin-top: 40px
+  h3
+    width: 100%
+    margin-bottom: 16px
+    a
+      color: #ffffff
+      font-size: 40px
+      font-weight: 300
+      line-height: 40px
+      font-weight: 300
+      &:hover
+        color: #ffffff
+        text-decoration: none;
+  p.intro
+    color: #ffffff
+    font-size: 24px
+    margin-bottom: 40px
+    line-height: 28px
+    input
+      font-size: 16px
+      line-height: 22px
+      @media all and (max-width: 905px)
+        width: 100%
+  .searchform
+    .button-primary
+      &.red
+        +gradient-button($color-quinary)
+        border: 1px solid darken($color-quinary, 10%)
+        margin-bottom: 0
+        @media all and (max-width: 905px)
+          width: 100%
+        &:hover
+          +gradient-button(darken($color-quinary, 10%))

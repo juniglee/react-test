@@ -1,0 +1,22 @@
+// MediaAnchor module
+// Used for styleing blocks of multiple elements (i.e. an image, heading, summary text), into a single anchor
+
+.MediaAnchor {
+    &:hover {
+        text-decoration: none;
+        cursor: pointer;
+
+        .MediaAnchor-title {
+            color: $link-color-hover;
+            text-decoration: underline;
+        }
+    }
+
+    &-title {
+        color: $link-color;
+    }
+
+    &-copy {
+        color: $font-color;
+    }
+}

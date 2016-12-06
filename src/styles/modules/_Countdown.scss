@@ -1,0 +1,35 @@
+#countbox {
+    width: 100%;
+    margin-bottom: 20px;
+
+    #days, #hours, #mins {
+        width: 31%;
+        margin-right: 2%;
+        margin-bottom: 0;
+        padding: 8px 4px 4px;
+        float: left;
+        background: $color-mono-xxxlight;
+        color: $color-tertiary;
+        font-size: 44px;
+        font-weight: 500;
+        line-height: .9;
+        text-align: center;
+    }
+
+    #days_text, #hours_text, #mins_text {
+        margin-top: 0;
+        padding-bottom: 0;
+        color: #444642;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+
+    #mins {
+        margin-right: 0;
+    }
+
+    #secs {
+        display: none;
+    }
+}

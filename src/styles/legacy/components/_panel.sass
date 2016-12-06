@@ -1,0 +1,89 @@
+// extend Panels
+.panel, .header-panel
+  &.blue-panel
+    background-color: $color-secondary
+
+  &.orange-panel
+    background-color: $color-primary
+
+  &.purple-panel
+    background-color: $color-quarternary
+
+  &.teal-panel
+    background-color: $color-tertiary
+
+  &.red-panel
+    background-color: $color-quinary
+
+  &.dark-grey-panel
+    background-color: $color-mono-dark
+
+  &.blue-panel, &.orange-panel, &.purple-panel, &.teal-panel, &.red-panel, &.dark-grey-panel
+    dl, h1, h2, h3, h4, h5, h6, li, p, a, &a, label, a:visited
+      color: $color-mono-xxxlight
+
+
+  // Additional Panel colours
+  &.grey-panel
+    background-color: $color-mono-xxlight
+
+
+
+//make sure all panel buttons have white anchor text
+.panel
+  .base-button
+    a, &a, a:visited
+      color: $color-mono-xxxlight
+
+// Content Panel
+.content-panel
+  margin: 0
+  padding: rem-calc(20) rem-calc(0)
+
+
+// Color Boxes
+
+div
+  // solid colours
+  &.orange
+    background-color: $color-primary
+  &.teal
+    background-color: $color-tertiary
+  &.purple
+    background-color: $color-quarternary
+  &.blue
+    background-color: $color-secondary
+  &.red
+    background-color: $color-quinary
+  &.mid-grey
+    background-color: $color-mono
+  &.light-grey
+    background-color: $color-mono-xxlight
+
+  // pattern backgrounds
+  &.orange-pattern, &.teal-pattern, &.purple-pattern, &.blue-pattern, &.red-pattern, &.yellow-pattern, &.grey-pattern
+    color: $color-mono-xxxlight
+    background-position: center
+    background-size: cover
+
+    h1, h2, h3, h4, h5
+      color: $color-mono-xxxlight
+
+
+  &.orange-pattern
+    background-image: url('//cdn.worldnomads.net/Content/styles/i/wn/backgrounds/hero_bg_color_orange.jpg')
+
+  &.teal-pattern
+    background-image: url('//cdn.worldnomads.net/Content/styles/i/wn/backgrounds/hero_bg_color_teal.jpg')
+
+  &.purple-pattern
+    background-image: url('//cdn.worldnomads.net/Content/styles/i/wn/backgrounds/hero_bg_color_purple.jpg')
+
+  &.blue-pattern
+    background-image: url('//cdn.worldnomads.net/Content/styles/i/wn/backgrounds/hero_bg_color_blue.jpg')
+
+  &.red-pattern
+    background-image: url('//cdn.worldnomads.net/Content/styles/i/wn/backgrounds/hero_bg_color_red.jpg')
+
+  &.grey-pattern
+    background-image: url('//cdn.worldnomads.net/Content/styles/i/wn/backgrounds/hero_bg_color_grey.jpg')

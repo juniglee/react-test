@@ -1,0 +1,121 @@
+#home {
+    background-image: url('//cdn.worldnomads.net/Media/Default/HomePageImages/hp-lombok-hero-full.jpg');
+    background-size: cover;
+    background-position: center left;
+    min-height: 600px;
+
+    @media #{$small-up} {
+        background-image: url('//cdn.worldnomads.net/Media/Default/HomePageImages/hp-lombok-hero-mobile.jpg');
+        min-height: 1040px;
+        background-position: top left;
+    }
+
+    @media #{$medium-up} {
+        background-image: url('//cdn.worldnomads.net/Media/Default/HomePageImages/hp-lombok-hero-tablet.jpg');
+        min-height: 640px;
+    }
+
+    @media #{$large-up} {
+        background-image: url('//cdn.worldnomads.net/Media/Default/HomePageImages/hp-lombok-hero-full.jpg');
+        background-size: cover;
+        background-position: center left;
+        min-height: 600px;
+    }
+
+    &heropromo {
+        @media #{$small-up} {
+            margin-top: 30px;
+        }
+    }
+
+    .intro {
+        a {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            color: $color-mono-xxxlight;
+        }
+    }
+}
+
+#wnqqcalculator {
+    margin-top: 10px;
+}
+
+.home {
+    &-hero {
+        &-title {
+            font-size: 28px;
+        }
+    }
+
+    &-search {
+        margin-top: -6px;
+        padding-top: 20px;
+        padding-bottom: 14px;
+        background-color: $body-color-dark;
+    }
+
+    &-search-inputs {
+        .gsc-input {
+            width: 80%;
+        }
+
+        td {
+            &.gsc-search-button {
+                width: 16px;
+            }
+        }
+
+        .gsc-search-button-2 {
+            float: none;
+        }
+
+        .gsst_b {
+            padding: 0;
+        }
+
+        .gsst_a {
+            padding-top: 5px;
+        }
+
+        .gscb_a {
+            color: $font-color;
+            font: 23px/13px arial, sans-serif;
+            opacity: .7;
+
+            &:hover {
+                color: $font-color;
+                opacity: 1;
+            }
+        }
+    }
+
+    &-Promo {
+        .Promo-media {
+            min-height: 280px;
+            background-image: url('//cdn.worldnomads.net/Media/Default/LearnImages/photo2016/TPS2016_Promo_Thumb.jpg');;
+            background-size: cover;
+
+            @media #{$medium-up} {
+                min-height: 200px;
+            }
+        }
+    }
+
+    .form-input-button-pair {
+        .autocomplete {
+            float: left;
+            margin: 0;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .button-primary {
+            height: 40px;
+            padding-right: 28px;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            line-height: 30px;
+        }
+    }
+}

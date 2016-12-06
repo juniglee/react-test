@@ -1,0 +1,19 @@
+.Author {
+    margin-top: 32px;
+
+    .Author-avatar {
+        display: inline-block;
+        width: 51px;
+        height: 51px;
+        margin-right: 15px;
+    }
+
+    &-profile {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &--reverse {
+        color: $color-mono-xxxlight;
+    }
+}

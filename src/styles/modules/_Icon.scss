@@ -1,0 +1,96 @@
+// WN Icon size module.
+// Notes: Icon module is one of the few SMACSS modules that is only appled via sub-module classes. .Icon is not required.
+
+[class^="Icon-"] {
+    &::before {
+        display: inline-block;
+    }
+}
+
+.Icon {
+    @mixin icon-circle($circle-size, $circle-scale) {
+        width: $circle-size;
+        height: $circle-size;
+        font-size: $circle-size - $circle-scale;
+        line-height: $circle-size;
+    }
+
+    &--circle {
+        &::before {
+            border: 1px solid $font-color;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        &.Icon--xsml,
+        &.Icon--xlge {
+            &::before {
+                border: 0;
+            }
+        }
+
+        &.Icon--sml {
+            &::before {
+                @include icon-circle(
+                    $icon-size-sml,
+                    10px
+                );
+            }
+        }
+
+        &.Icon--md {
+            &::before {
+                @include icon-circle(
+                    $icon-size-md,
+                    16px
+                );
+            }
+        }
+
+        &.Icon--lge {
+            &::before {
+                @include icon-circle(
+                    $icon-size-lge,
+                    28px
+                );
+            }
+        }
+    }
+
+    &--xsml {
+        &::before {
+            font-size: $icon-size-xsml;
+        }
+    }
+
+    &--sml {
+        &::before {
+            font-size: $icon-size-sml;
+        }
+    }
+
+    &--md {
+        &::before {
+            font-size: $icon-size-md;
+        }
+    }
+
+    &--lge {
+        &::before {
+            font-size: $icon-size-lge;
+        }
+    }
+
+    &--xlge {
+        &::before {
+            font-size: $icon-size-xlge;
+        }
+    }
+
+    &--reverse {
+        &::before {
+            border-color: $color-mono-xxxlight;
+            color: $color-mono-xxxlight;
+        }
+    }
+}

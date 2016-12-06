@@ -1,0 +1,83 @@
+.subscribeForm {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    background-color: $color-mono-xxlight;
+
+    &-form {
+        display: inline-block;
+        padding: 10px 0;
+        background-color: $color-mono-xxxlight;
+
+        &-checkbox {
+            display: inline-block;
+            padding-top: 20px;
+            padding-right: 40px;
+
+            @media #{$medium-up} {
+                padding-top: 0;
+            }
+        }
+
+        &-question {
+            padding-right: 40px;
+        }
+
+        &-subscribe {
+            margin: 10px 0;
+            padding: 20px;
+            border: 1px solid $color-mono;
+            border-radius: 3px;
+        }
+
+        &-save {
+            margin-top: 20px;
+        }
+    }
+
+    &-header {
+        margin-bottom: 0;
+
+        h2 {
+            @media #{$large-up} {
+                display: table-cell;
+            }
+        }
+
+        &-links {
+            a {
+                display: inline-block;
+                text-decoration: underline;
+
+                @media #{$medium-up} {
+                    font-size: $font-size-lge;
+                }
+            }
+
+            @media #{$large-up} {
+                display: table-cell;
+                float: right;
+                vertical-align: middle;
+            }
+        }
+
+        @media #{$medium-up} {
+            display: table;
+            width: 100%;
+        }
+    }
+
+    &-values {
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .Hero {
+        background-image: url('/Media/Default/images/placeholder.jpg');
+        background-position: bottom;
+    }
+
+    .hide {
+        display: none;
+    }
+}

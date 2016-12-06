@@ -1,0 +1,29 @@
+.Testimonial {
+    margin-bottom: 0;
+    padding-top: 48px;
+    padding-bottom: 56px;
+    background-image: url('//cdn.worldnomads.net/Content/styles/i/wn/backgrounds/hero_bg_color_purple.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &--secondary {
+        background-color: $color-secondary-xdark;
+    }
+
+    &-quote {
+        padding-left: 0;
+        border-left: 0;
+        color: $color-mono-xxxlight;
+        font-weight: $font-weight-bold;
+
+        &::before {
+            display: block;
+            margin-bottom: 24px;
+            font-family: 'wn-icomoon';
+            font-size: $font-size-xlge;
+            letter-spacing: .4rem;
+            content: "\e900\e901";
+        }
+    }
+}

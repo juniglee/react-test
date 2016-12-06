@@ -1,0 +1,30 @@
+// Datepicker style override
+
+
+.left {
+    &.datepicker {
+        .datepicker-show-next-month, .datepicker-show-past-month {
+            background-color: $color-primary;
+        }
+
+        .datepicker-calendar {
+            td {
+
+                &.selected {
+                    a {
+                        background-color: $color-primary;
+                        color: $color-mono-xxxlight;
+                    }
+                }
+
+                a {
+                    color: $color-primary;
+
+                    &:hover {
+                        background-color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+}

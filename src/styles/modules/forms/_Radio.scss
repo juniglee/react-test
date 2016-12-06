@@ -1,0 +1,38 @@
+.Radio {
+    margin-bottom: 1rem;
+
+    &--inline {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    label {
+        margin-left: 2px;
+    }
+
+    input[type="radio"] + label {
+        .Radio-button {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: -1px .6rem 0 0;
+            transition: background-color .5s ease;
+            border: 2px solid $color-mono-xxxlight;
+            border-radius: 50%;
+            background-color: $color-mono-xxxlight;
+            box-shadow: 0 0 0 1px $color-mono-light;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+    }
+
+    input[type="radio"]:checked + label {
+        .Radio-button {
+            background-color: $color-primary;
+        }
+    }
+}

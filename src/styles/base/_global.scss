@@ -1,0 +1,104 @@
+// Brand global base styles
+
+body,
+html {
+    color: $font-color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+}
+
+h1, h2, h3, h4 {
+    color: $color-mono-xdark;
+    font-weight: $font-weight;
+}
+
+h5, h6 {
+    font-weight: $font-weight-bold;
+}
+
+h1 {
+    @extend .font-size-xxxlge;
+    line-height: 1.1;
+
+    a {
+        @extend .font-size-xxxlge;
+        line-height: 1.1;
+    }
+}
+
+h2 {
+    @extend .font-size-xxlge;
+    float: none;
+
+    a {
+        @extend .font-size-xxlge;
+        float: none;
+    }
+}
+
+h3 {
+    @extend .font-size-xlge;
+    float: none;
+
+    a {
+        @extend .font-size-xlge;
+        float: none;
+    }
+}
+
+h4 {
+    @extend .font-size-lge;
+
+    a {
+        @extend .font-size-lge;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+h5 {
+    @extend .font-size;
+
+    a {
+        @extend .font-size;
+    }
+}
+
+p {
+    @extend .font-size-body;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:visited {
+        color: $link-color;
+    }
+
+    &:hover {
+        color: $link-color-hover;
+        text-decoration: underline;
+    }
+}
+
+strong {
+    font-weight: $font-weight-bold;
+}
+
+small {
+    font-size: $font-size-sml;
+    line-height: 1.4em;
+}
+
+figure {
+    margin: 0;
+}

@@ -1,0 +1,62 @@
+.Switch {
+    $switch-size: 26px;
+    $switch-transition-speed: .2s;
+
+    font-weight: $font-weight-bold;
+
+    input[type="checkbox"] {
+        position: absolute;
+        margin-left: -9999px;
+        visibility: hidden;
+    }
+
+    input[type="checkbox"] + label {
+        display: inline-block;
+        position: relative;
+        width: $switch-size * 2;
+        height: $switch-size;
+        margin-left: 0;
+        padding: 2px;
+        transition: background $switch-transition-speed;
+        border-radius: $switch-size * 2;
+        outline: none;
+        background-color: $border-color;
+        cursor: pointer;
+        vertical-align: middle;
+        user-select: none;
+
+        &::before,
+        &::after {
+            display: block;
+            position: absolute;
+            content: '';
+        }
+
+        &::before {
+            top: 2px;
+            right: 2px;
+            bottom: 2px;
+            left: 2px;
+            transition: background $switch-transition-speed;
+            border-radius: $switch-size;
+            background-color: $color-mono-xxxlight;
+        }
+
+        &::after {
+            top: 4px;
+            bottom: 4px;
+            left: 4px;
+            width: $switch-size - 8px;
+            transition: margin $switch-transition-speed, background $switch-transition-speed;
+            border-radius: $switch-size - 4px;
+            background-color: $border-color;
+        }
+    }
+
+    input[type="checkbox"]:checked + label {
+        &::after {
+            margin-left: $switch-size;
+            background-color: $color-primary;
+        }
+    }
+}

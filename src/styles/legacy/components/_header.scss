@@ -1,0 +1,114 @@
+.zone-header {
+    overflow: hidden;
+}
+
+.top-links {
+    font-weight: $font-weight-bold;
+
+    li {
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.side-nav {
+    &-toggle {
+        &.open {
+            span {
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+
+    .members-links-panel {
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &-sign-in {
+        font-weight: $font-weight-bold;
+
+        .login {
+            color: $color-mono-xxxlight;
+
+            &:hover {
+                color: $color-primary;
+                text-decoration: none;
+            }
+        }
+
+        &.open {
+            .existing-member {
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+
+    .side-nav-sign-in-form {
+        &.open {
+            max-width: auto;
+            border-bottom: 0;
+        }
+    }
+
+    .input-group {
+        &.full-width {
+            margin-bottom: 0;
+        }
+    }
+
+    .side-nav-list {
+        background-color: $color-mono-xxxlight;
+
+        ul {
+            margin-left: 0;
+
+            > li {
+                margin-bottom: 0;
+
+                > a {
+                    padding: 12px 20px 20px;
+
+                    label {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-a {
+        &:hover {
+            text-decoration: none;
+        }
+
+        label {
+            font-weight: $font-weight;
+        }
+
+        [class*="icon-wn"] {
+            color: $font-color;
+        }
+    }
+}
+
+//BR specific header fixes
+[class*="countrydomain-br"] {
+    .side-nav-sign-in {
+        width: 94px;
+    }
+
+    .top-links {
+        right: 147px;
+    }
+}

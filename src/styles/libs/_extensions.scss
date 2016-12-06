@@ -1,0 +1,121 @@
+.clearfix {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.standfirst {
+    @extend .font-size-xlge;
+}
+
+// Sections
+.section-wrapper {
+    margin-bottom: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    @media #{$medium-up} {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    @media #{$large-up} {
+        padding-top: 48px;
+        padding-bottom: 56px;
+    }
+}
+
+// Typography Includes
+.line-height {
+    line-height: 1.1em;
+}
+
+.font-size-xxlge,
+.font-size-xlge,
+.font-size-lge {
+    line-height: 1.2em;
+}
+
+// Typography Includes
+.font-size-xxxlge {
+    margin-bottom: 1.2rem;
+    font-size: $font-size-xxxlge * .5;
+    line-height: 1.1em;
+
+    @media #{$medium-up} {
+        margin-bottom: 1.5rem;
+        font-size: $font-size-xxxlge * .8;
+        letter-spacing: -1px;
+    }
+
+    @media #{$large-up} {
+        margin-bottom: 2rem;
+        font-size: $font-size-xxxlge;
+        letter-spacing: -2px;
+    }
+}
+
+.font-size-xxlge {
+    margin-bottom: .5rem;
+    font-size: $font-size-xxlge * .7;
+    line-height: 1.1em;
+
+    @media #{$medium-up} {
+        margin-bottom: 1rem;
+        font-size: $font-size-xxlge * .9;
+        letter-spacing: -1px;
+    }
+
+    @media #{$large-up} {
+        margin-bottom: 1.2rem;
+        font-size: $font-size-xxlge;
+        letter-spacing: -1px;
+    }
+}
+
+.font-size-xlge {
+    margin-bottom: .5rem;
+    font-size: $font-size-xlge * .7;
+
+    @media #{$medium-up} {
+        margin-bottom: .8rem;
+        font-size: $font-size-xlge * .9;
+        letter-spacing: -.5px;
+    }
+
+    @media #{$large-up} {
+        margin-bottom: 1rem;
+        font-size: $font-size-xlge;
+        letter-spacing: -1px;
+    }
+}
+
+.font-size-lge {
+    margin-bottom: .5rem;
+    font-size: $font-size-lge * .9;
+
+    @media #{$medium-up} {
+        margin-bottom: .8rem;
+        font-size: $font-size-lge;
+    }
+}
+
+.font-size {
+    margin-bottom: .5rem;
+    font-size: $font-size;
+
+    @media #{$medium-up} {
+        margin-bottom: 1rem;
+    }
+}
+
+.font-size-body {
+    margin-bottom: 1rem;
+    font-size: $font-size;
+    line-height: 1.3;
+
+    @media #{$medium-up} {
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+    }
+}

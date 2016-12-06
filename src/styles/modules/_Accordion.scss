@@ -1,0 +1,80 @@
+// Custom overrides of Foundation Accordion module
+
+.accordion {
+    &.accordion--plain {
+        .accordion-navigation {
+            border-bottom: $border-default;
+
+            &.active {
+                > a {
+                    background: transparent;
+                }
+            }
+
+            > a {
+                margin-bottom: 0;
+                padding: 1rem 38px 1rem 0;
+                background: transparent;
+
+                &:hover {
+                    background: transparent;
+                }
+
+                &::before {
+                    top: 1rem;
+                    right: 0;
+                    bottom: auto;
+                }
+            }
+
+            .content {
+                padding: 0 0 1rem;
+            }
+        }
+    }
+
+    .accordion-navigation {
+        > a {
+            display: block;
+            position: relative;
+            margin-bottom: 16px;
+            padding: 10px 20px;
+            outline: none;
+            background: $body-color-dark;
+            font-weight: $font-weight-bold;
+            cursor: pointer;
+
+            &::before {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 16px;
+                bottom: 0;
+                width: 24px;
+                height: 24px;
+                margin: auto;
+                border: 1px solid $font-color;
+                border-radius: 50%;
+                font-family: wn-icomoon;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                content: '\f067';
+            }
+
+            &:hover {
+                background: $body-color-dark;
+            }
+        }
+
+        &.active {
+            > a {
+                background: $body-color-dark;
+
+                &::before {
+                    content: '\f068';
+                }
+            }
+        }
+    }
+}

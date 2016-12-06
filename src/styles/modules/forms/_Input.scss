@@ -1,0 +1,47 @@
+// WN Input module
+// Primarily used for form validation
+
+.Input {
+    @extend %input-margin;
+    display: block;
+    margin-top: 0;
+    transition: color .2s ease-in-out;
+
+    .Input-field {
+        margin-bottom: 0;
+    }
+
+    &-message {
+        display: block;
+        margin-top: .5rem;
+        font-weight: $font-weight;
+    }
+
+    // States
+    &-is-valid,
+    &-is-invalid {
+        .Input-field {
+            &:focus {
+                border-color: $color-primary;
+            }
+        }
+    }
+
+    &-is-valid {
+        .Input-field {
+            border-color: $color-success;
+        }
+    }
+
+    &-is-invalid {
+        color: $color-error;
+
+        .Input-field {
+            border-color: $color-error;
+        }
+
+        .Input-message {
+            color: $color-error;
+        }
+    }
+}

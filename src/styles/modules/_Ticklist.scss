@@ -1,0 +1,31 @@
+.Ticklist {
+    margin-left: 0;
+    list-style: none;
+
+    &--inline {
+        > li {
+            display: inline-block;
+            margin-right: 1.5rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    > li {
+        position: relative;
+        margin-bottom: 1rem;
+        padding-left: 26px;
+        line-height: 1.3em;
+        text-align: left;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family: $icon-family;
+            content: '\f00c';
+        }
+    }
+}

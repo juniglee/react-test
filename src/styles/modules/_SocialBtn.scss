@@ -1,0 +1,133 @@
+// Social Buttons
+
+.SocialBtn {
+    padding: $btn-padding;
+    border: 0;
+    border-radius: $button-radius;
+    color: $color-mono-xxxlight;
+    font-size: $font-size;
+    font-weight: $font-weight-bold;
+    white-space: nowrap;
+    box-shadow: none;
+    vertical-align: middle;
+
+
+    &[class*='SocialBtn-'] {
+        padding: 9px 12px;
+
+        span {
+            vertical-align: middle;
+        }
+
+        [class*='icon-'] {
+            font-size: rem-calc(22);
+        }
+    }
+
+    &-label {
+        margin-right: 6px;
+        font-family: $default-font-family;
+        font-size: $font-size;
+        font-weight: $font-weight-bold;
+    }
+
+    &.SocialBtn-facebook {
+        background-color: $color-facebook;
+
+        &:hover {
+            background-color: $color-facebook-dark;
+        }
+
+        &:focus {
+            outline: 5px auto $color-facebook-dark;
+            background-color: $color-facebook-dark;
+        }
+    }
+
+    &.SocialBtn-twitter {
+        background-color: $color-twitter;
+
+        &:hover {
+            background-color: $color-twitter-dark;
+        }
+
+        &:focus {
+            outline: 5px auto $color-twitter-dark;
+            background-color: $color-twitter-dark;
+        }
+    }
+
+    &.SocialBtn-pinterest {
+        background-color: $color-pinterest;
+
+        &:hover {
+            background-color: $color-pinterest-dark;
+        }
+
+        &:focus {
+            outline: 5px auto $color-pinterest-dark;
+            background-color: $color-pinterest-dark;
+        }
+    }
+
+    &.SocialBtn-googleplus {
+        background-color: $color-googleplus;
+
+        &:hover {
+            background-color: $color-googleplus-dark;
+        }
+
+        &:focus {
+            outline: 5px auto $color-googleplus-dark;
+            background-color: $color-googleplus-dark;
+        }
+    }
+
+    &.SocialBtn-linkedin {
+        background-color: $color-linkedin;
+
+        &:hover {
+            background-color: $color-linkedin-dark;
+        }
+
+        &:focus {
+            outline: 5px auto $color-linkedin-dark;
+            background-color: $color-linkedin-dark;
+        }
+    }
+
+    &.SocialBtn-stumbleupon {
+        background-color: $color-stumbleupon;
+
+        &:hover {
+            background-color: $color-stumbleupon-dark;
+        }
+
+        &:focus {
+            outline: 5px auto $color-stumbleupon-dark;
+            background-color: $color-stumbleupon-dark;
+        }
+    }
+
+    &.SocialBtn-toggle {
+        padding: 11px;
+        border-radius: $button-radius;
+        background-color: $color-mono-xxlight;
+        color: $font-color;
+        font-family: $icon-family;
+        font-size: 1rem;
+        line-height: 1;
+
+        &:hover {
+            background-color: $color-mono-xlight;
+        }
+    }
+
+    &-toggle-plus::before {
+        content: "\f067";
+    }
+
+    &-toggle-minus::before {
+        content: "\f068";
+    }
+}

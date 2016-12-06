@@ -1,0 +1,153 @@
+// QQC
+
+#wnqqcalculator
+  padding: 16px
+  .input-group
+  @media all and (min-width: 935px)
+    .tooltip
+      bottom: -70px
+  @media all and (max-width: 935px)
+    .tooltip
+      bottom: -94px
+  @media all and (max-width: 720px)
+    .tooltip
+      bottom: -118px
+  @media all and (max-width: 650px)
+    .tooltip
+      bottom: -118px
+  @media all and (max-width: 641px)
+    .tooltip
+      bottom: -70px
+  @media all and (max-width: 552px)
+    .tooltip
+      bottom: -94px
+  .trustedby
+    width: 100%
+    display: block
+    padding-top: 16px
+    p, img
+      margin-right: 3%
+    p
+      color: $font-color
+      font-size: 12px
+      margin: 0px
+      line-height: rem-calc(1)
+      font-weight: $font-weight-bold
+    img
+      width: auto
+      max-width: 80px
+      margin-top: 10px
+      cursor: pointer
+      &.natgeo
+        padding-top: 10px
+      &.vt
+        padding-top: 6px
+      @media all and (max-width: 1110px)
+        &.natgeo
+          display: none
+      @media all and (max-width: 775px)
+        &.intrep
+          display: none
+      @media all and (max-width: 640px)
+        &.intrep, &.natgeo
+          display: inline-block
+      @media all and (max-width: 565px)
+        &.natgeo
+          display: none
+      @media all and (max-width: 460px)
+        &.vt
+          display: none
+      @media all and (max-width: 445px)
+        &.rg
+          display: none
+  // white
+  &.white
+    background-color: rgba($color-mono-xxlight, 0.8)
+    h1, h5
+      color: $font-color
+    h1
+      line-height: 40px
+      font-size: 40px
+      margin-bottom: 0
+    .qqc-container
+      input[type='text'], input[type='number']
+        border: $color-mono 1px solid
+  //All
+  .qqc-container
+    width: 100%
+    max-width: 100%
+    min-width: 100%
+    .legacy-travellers
+      label
+        line-height: 36px
+  #wn-insurance-quote-editor, .qqc-container-wrapper, .traveller-inputs-wrapper
+    margin-bottom: 0
+  #qqc
+    margin: 0
+    h1
+      display: none
+      line-height: 0
+      margin-bottom: 0
+      padding: 0
+    h5
+      font-size: 14px
+      margin-top: 4px
+      margin-bottom: 2px
+      font-weight: $font-weight-bold
+    .continue
+      margin-top: 24px !important
+      background: linear-gradient(to bottom, #ffa800 0%, #ec9000 15%, #ec9000 85%, #d57e02 100%)
+      background-color: #ec9000
+      border: 0
+      font-size: $font-size
+      text-shadow: none
+      padding: 2px 15px 0 !important
+      &:hover
+        background: #d57e02
+      span
+        line-height: 34px
+      &:after
+        display: none // turn off base-button arw
+
+    .qqc-background
+      background: none
+      padding: 0
+      margin-bottom: 0
+    .destinations-wrapper
+      margin-bottom: 6px
+    .input-group
+      margin: 3px 0 0
+      .icon
+        &:after
+          font-size: 16px
+          left: 8px
+          bottom: -3px
+      &.destination, &.country-of-residence, &.traveller-age, &.departure-date, &.return-date, &.province
+        input
+          padding-left: 40px
+          font-size: 14px
+          line-height: 20px
+      .tool-tip
+        top: rem-calc(70)
+        bottom: inherit !important
+
+    .province
+      h5
+        min-height: 32px
+      @media all and (max-width: 660px)
+        h5
+          min-height: 16px
+
+    #selected-destinations
+      margin-left: 0;
+
+  @media all and (max-width: 660px)
+    .traveller-inputs-wrapper
+      margin-bottom: 16px
+.datepicker
+  .datepicker-calendar
+    &:nth-child(4)
+      display: none
+
+    .datepicker-calendar-title
+      padding-bottom: rem-calc(20)

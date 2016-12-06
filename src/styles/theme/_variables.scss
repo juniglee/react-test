@@ -1,0 +1,95 @@
+// WN Theme and Variables
+
+// Colours
+$color-primary-xxlight: #fef9f1;
+$color-primary-light: #ffa600;
+$color-primary: #ff9c00;
+$color-primary-dark: #d57e02;
+
+$color-secondary-xlight: #edf5fe;
+$color-secondary-light: #afccec;
+$color-secondary: #297ac6;
+$color-secondary-dark: #094f90;
+$color-secondary-xdark: #134067;
+
+$color-tertiary: #40c1ba;
+
+$color-quarternary: #61398b;
+
+$color-quinary: #de5346;
+
+$color-mono-xxxlight: #fff;
+$color-mono-xxlight: #eee;
+$color-mono-xlight: #ccc;
+$color-mono-light: #b6b6b6;
+$color-mono: #808080;
+$color-mono-dark: #444642;
+$color-mono-xdark: #2a2b29;
+$color-mono-xxdark: #000;
+
+$body-color: $color-mono-xxxlight;
+$body-color-dark: #f8f5f5;
+
+$link-color: $color-secondary-dark;
+$link-color-hover: $color-secondary-xdark;
+
+$font-color-light: #b6b6b6;
+$font-color: #2a2b29;
+
+$color-success: #5ca545;
+$color-success-dark: #457a1a;
+
+$color-error: #c52026;
+$color-error-dark: #970b0e;
+
+$color-warning: $color-primary;
+$color-warning-dark: $color-primary-dark;
+
+// Social Button Styles
+$color-facebook: #3b5998;
+$color-facebook-dark: darken($color-facebook, 12%);
+$color-twitter: #00aced;
+$color-twitter-dark: darken($color-twitter, 12%);
+$color-googleplus: #dd4b39;
+$color-googleplus-dark: darken($color-googleplus, 12%);
+$color-youtube: #b00;
+$color-youtube-dark: darken($color-youtube, 12%);
+$color-linkedin: #007bb5;
+$color-linkedin-dark: darken($color-linkedin, 12%);
+$color-pinterest: #cb2027;
+$color-pinterest-dark: darken($color-pinterest, 12%);
+$color-stumbleupon: #eb4823;
+$color-stumbleupon-dark: darken($color-stumbleupon, 12%);
+
+// Paddings & Margins
+$default-padding: 20px;
+$btn-padding: 12px 32px;
+
+// Border
+$border-color: #dbdbdb;
+$border-default: 1px solid $border-color;
+
+//Globals
+$input-radius: 3px;
+$container-radius: 3px;
+$input-height: 40px;
+$header-height: 65px;
+$icon-family: 'wn-icomoon';
+
+// Typography
+$font-size-xxxlge: 3.6rem;
+$font-size-xxlge: 2.2rem;
+$font-size-xlge: 1.7rem;
+$font-size-lge: 1.2rem;
+$font-size: 16px;
+$font-size-sml: 13px;
+$font-size-xsml: 11px;
+$font-size-xxsml: 9px;
+$font-weight-bold: 500;
+$font-weight: 300;
+
+$icon-size-xsml: 16px;
+$icon-size-sml: 24px;
+$icon-size-md: 40px;
+$icon-size-lge: 64px;
+$icon-size-xlge: 88px;

@@ -1,0 +1,62 @@
+.Calendar {
+    display: table;
+    width: 100%;
+    margin-bottom: 12px;
+    padding-right: 4%;
+    background: $color-mono-xxxlight;
+
+    &-date {
+        display: table-cell;
+        width: 65px;
+        padding: 8px;
+        background: $color-mono-dark;
+        color: $color-mono-xxxlight;
+        text-align: center;
+        vertical-align: middle;
+
+        &-day {
+            margin-bottom: 0;
+            font-size: 38px;
+            line-height: 100%;
+        }
+
+        &-month {
+            font-size: 14px;
+            line-height: 100%;
+        }
+    }
+
+    &-info {
+        display: table-cell;
+        vertical-align: middle;
+
+        .Calendar-info-text {
+            margin: 12px;
+            font-size: $font-size-lge;
+        }
+    }
+
+    &--secondary {
+        .Calendar-date {
+            background: $color-secondary;
+        }
+    }
+
+    &--tertiary {
+        .Calendar-date {
+            background: $color-tertiary;
+        }
+    }
+
+    &--quarternary {
+        .Calendar-date {
+            background: $color-quarternary;
+        }
+    }
+
+    &--quinary {
+        .Calendar-date {
+            background: $color-quinary;
+        }
+    }
+}

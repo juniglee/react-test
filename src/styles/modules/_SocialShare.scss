@@ -1,0 +1,59 @@
+// Social Share Module
+
+// Notes
+// 1. Temporary hack to resolve margin issues with last button inserted via JS.
+
+.SocialShare {
+
+    &--alt {
+        .SocialShare-count-total,
+        .SocialShare-count-share {
+            color: $color-mono-xxxlight;
+        }
+    }
+
+    &-count {
+        display: inline-block;
+        color: $font-color-light;
+        vertical-align: middle;
+
+        &-total {
+            display: inline-block;
+            font-size: $font-size-xlge;
+            font-weight: $font-weight-bold;
+            line-height: 1;
+
+            @media #{$medium-up} {
+                font-size: $font-size-xxlge;
+            }
+
+        }
+
+        &-share {
+            display: inline-block;
+            margin: 0 rem-calc(8) 0 0;
+            font-size: $font-size-xsml;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+    }
+
+    .SocialBtn-label {
+        display: none;
+
+        @media #{$medium-up} {
+            display: inline-block;
+        }
+    }
+
+    &-count,
+    .SocialShare > [class*="SocialBtn-"] {
+        margin-right: 4px;
+        margin-bottom: 4px;
+    }
+
+    // 1.
+    .SocialBtn-stumbleupon {
+        margin-right: 6px;
+    }
+}

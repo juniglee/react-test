@@ -1,0 +1,16 @@
+.MobileModal {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    padding: 16px 40px 0;
+    z-index: 100;
+
+    @media #{$medium-up} {
+        display: none;
+    }
+
+    &-close {
+        position: absolute;
+        right: 10px;
+    }
+}

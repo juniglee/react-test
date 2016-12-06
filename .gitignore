@@ -1,0 +1,13 @@
+.DS_Store
+/dist/competitions/
+/dist/css/
+/dist/guides/
+/dist/index.html
+/dist/learn/
+/dist/lovedby/
+/dist/make-a-difference/
+/dist/travel-insurance/
+/dist/policy-wording/
+/dist/Media/Default/js/layout/
+
+node_modules/

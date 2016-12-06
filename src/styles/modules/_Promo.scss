@@ -1,0 +1,137 @@
+// Promo - SMACCS based module
+// Note: the default Promo panel should never be used with fewer than 6 grid columns
+
+.Promo {
+    display: table;
+    position: relative;
+    width: 100%;
+    background-color: $color-mono-xlight;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+
+    &--minor {
+        .Promo-media {
+            min-height: 200px;
+        }
+
+        .Promo-media,
+        .Promo-content {
+            display: block;
+            width: 100%;
+        }
+
+        .Promo-content {
+            @media #{$medium-up} {
+                padding: 1.5rem;
+            }
+        }
+    }
+
+    &--primary {
+        .Promo-content {
+            background-color: $color-primary;
+        }
+    }
+
+    &--secondary {
+        .Promo-content {
+            background-color: $color-secondary;
+        }
+    }
+
+    &--tertiary {
+        .Promo-content {
+            background-color: $color-tertiary;
+        }
+    }
+
+    &--quarternary {
+        .Promo-content {
+            background-color: $color-quarternary;
+        }
+    }
+
+    &--quinary {
+        .Promo-content {
+            background-color: $color-quinary;
+        }
+    }
+
+    &-media,
+    &-content {
+        display: block;
+    }
+
+    &-media {
+        min-height: 80px;
+        background-repeat: inherit;
+        background-position: inherit;
+        background-size: inherit;
+
+        @media #{$medium-up} {
+            display: table-cell;
+        }
+    }
+
+    &-content {
+        padding: 1rem;
+        background-color: $color-mono-xdark;
+        color: $color-mono-xxxlight;
+
+        @media #{$medium-up} {
+            display: table-cell;
+            width: 70%;
+            padding: 2rem 1.5rem;
+            vertical-align: middle;
+        }
+
+        @media #{$large-up} {
+            width: 50%;
+        }
+    }
+
+    .Promo-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &-copy {
+        color: $color-mono-xxxlight;
+    }
+
+    &-benefits {
+        display: none;
+        margin: 10px 0 0;
+        font-size: 13px;
+
+        @media #{$large-up} {
+            display: block;
+        }
+
+        > li {
+            display: inline-block;
+            width: auto;
+            margin-right: 12px;
+            padding-bottom: 0;
+        }
+    }
+
+    &-benefitsIcon {
+        display: inline-block;
+        margin-right: 2px;
+        vertical-align: middle;
+    }
+
+    &-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &-cta {
+        margin-bottom: 0;
+    }
+}

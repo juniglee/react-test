@@ -1,0 +1,65 @@
+.Article {
+    margin-top: 24px;
+
+    .DestinationVideos-Image {
+        position: relative;
+
+        img {
+            cursor: pointer;
+
+            &.play-icon {
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: auto;
+                margin: auto;
+
+                @media only screen and (min-width: 640px) {
+                    transform: scale(.8);
+                }
+            }
+        }
+    }
+
+    &-Highlight {
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    &-Aside {
+        width: 100%;
+        margin-top: 16px;
+        padding: 20px;
+        float: left;
+        background: $color-mono-xxlight;
+
+        h4 {
+            margin-bottom: 16px;
+        }
+    }
+
+    h4 {
+        margin-bottom: 16px;
+    }
+
+    p {
+        margin-bottom: 16px;
+        line-height: 20px;
+
+        &.small {
+            width: 100%;
+            margin-top: 16px;
+            float: left;
+            clear: both;
+            font-size: 12px;
+        }
+    }
+
+    img {
+        margin-bottom: 16px;
+    }
+}

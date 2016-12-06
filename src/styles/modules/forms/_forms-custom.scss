@@ -1,0 +1,171 @@
+// Extends
+%input-defaults {
+    padding-right: 16px;
+    padding-left: 16px;
+    border: $border-default;
+    border-radius: $input-radius;
+    line-height: 1;
+    box-shadow: inset 0 0 3px 0 rgba($color-mono-light, .5);
+
+    &:focus {
+        border-color: $color-primary;
+        outline: none;
+        box-shadow: 0 0 1px 0 rgba($color-primary, 1);
+    }
+}
+
+%input-type {
+    color: $font-color;
+    font-weight: $font-weight;
+}
+
+%input-margin {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+
+    @media #{$medium-up} {
+        margin-bottom: 1.5rem;
+    }
+}
+
+// default form Foundation overrides
+fieldset {
+    margin-bottom: 2rem;
+}
+
+legend {
+    @extend .font-size-xlge;
+    margin-bottom: 1rem;
+}
+
+label {
+    @extend .font-size-body;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $font-color;
+    font-size: 1rem;
+    font-weight: $font-weight-bold;
+
+    &.required {
+        &::after {
+            color: $color-quinary;
+            content: "*";
+        }
+    }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+    @extend %input-defaults;
+    @extend %input-type;
+    @extend %input-margin;
+    float: none;
+    font-size: $font-size;
+
+    &:focus {
+        color: $font-color;
+    }
+
+    &:disabled {
+        background-color: $body-color-dark;
+        color: $font-color;
+    }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+select {
+    height: $input-height;
+}
+
+textarea {
+    min-height: 4rem;
+    padding-top: 12px;
+}
+
+select {
+    @extend %input-defaults;
+    padding: .5rem;
+    padding-left: 16px;
+}
+
+select[multiple] {
+    height: auto;
+    padding: 0;
+}
+
+option {
+    @extend %input-type;
+    padding: 12px 16px;
+
+    &:hover,
+    &:focus {
+        background-color: $color-mono-dark;
+        color: $color-mono-xxxlight;
+    }
+
+    &:last-child {
+        border: 0;
+    }
+}
+
+// Foundation component overrides
+.help-text {
+    display: block;
+    margin-top: .75rem;
+    margin-bottom: 0;
+    font-size: $font-size;
+    font-style: italic;
+    font-weight: $font-weight;
+}
+
+.content-guide-form {
+    select {
+        &.signupForm-residenceField,
+        &.signupForm-travelField {
+            padding: 9px 12px;
+            appearance: none;
+        }
+    }
+
+    .button {
+        margin-top: 16px;
+    }
+
+    .form-label {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .signupForm-emailLabel {
+        display: inline-block;
+    }
+
+    .checkboxarea {
+        margin-top: 16px;
+    }
+}

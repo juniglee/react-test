@@ -1,0 +1,76 @@
+// Global layout classes
+// .container is used to wrap a pages elements and provide consistent amrgins at the top and bottom of the page.
+// Notes: Only ever use one container class at a time
+// 1. -hashero should be used when there is a hero section, or other section that the absolutely positioned header sits over
+// 2. Use -cropped for situations where the top margin is not required, such as when a section following the hero module has a background
+
+.container {
+    margin-top: $header-height + 20px;
+    margin-bottom: 50px;
+
+    @media #{$medium-up} {
+        margin-top: $header-height + 50px;
+        margin-bottom: 80px;
+    }
+}
+
+.container-hashero { // 1.
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    @media #{$medium-up} {
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+}
+
+.container-cropped { // 2.
+    margin-bottom: 50px;
+
+    @media #{$medium-up} {
+        margin-bottom: 80px;
+    }
+}
+
+// .segment- applies consistent margin-bottoms to sectioning blocks
+// Notes: Only ever use one section margin class at a time
+// 1. Use -sml when the last child element has a margin-bottom, thus increasing the overall margin-bottom.
+// 2. Use -break to create a border-bottom in between sections
+// 3. -pad should typlically only be applied to sections which have a background and theefore require that background to be padded
+
+.segment-margin {
+    margin-bottom: 30px;
+
+    @media #{$medium-up} {
+        margin-bottom: 50px;
+    }
+}
+
+.segment-margin-sml { // 1.
+    margin-bottom: 10px;
+
+    @media #{$medium-up} {
+        margin-bottom: 20px;
+    }
+}
+
+.segment-margin-break { // 2.
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: $border-default;
+
+    @media #{$medium-up} {
+        margin-bottom: 50px;
+        padding-bottom: 40px;
+    }
+}
+
+.segment-pad { // 3.
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media #{$medium-up} {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

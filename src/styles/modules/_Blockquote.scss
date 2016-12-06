@@ -1,0 +1,20 @@
+.Blockquote {
+    display: block;
+    margin-bottom: .5rem;
+    padding: 0;
+    border: 0;
+
+    &::before {
+        display: block;
+        margin-bottom: rem-calc(8);
+        color: $color-mono-xlight;
+        font-family: 'wn-icomoon';
+        font-size: 1.2rem;
+        content: '\e900' ' ' '\e901';
+
+        @media #{$medium-up} {
+            margin-bottom: rem-calc(16);
+            font-size: 1.8rem;
+        }
+    }
+}

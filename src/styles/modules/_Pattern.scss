@@ -1,0 +1,48 @@
+// World Nomads custom background-image pattern module
+
+.Pattern {
+    border: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    &--secondary {
+        background-image: url('//cdn.worldnomads.net/Media/Default/images/wn-pattern-bg-blue.jpg');
+        /*ImageEmbed:skip*/
+    }
+
+    &--tertiary {
+        background-image: url('//cdn.worldnomads.net/Media/Default/images/wn-pattern-bg-teal.jpg'); /*ImageEmbed:skip*/
+    }
+
+    &--quarternary {
+        background-image: url('//cdn.worldnomads.net/Media/Default/images/wn-pattern-bg-purple.jpg'); /*ImageEmbed:skip*/
+    }
+
+    &--quinary {
+        background-image: url('//cdn.worldnomads.net/Themes/NomadsFoundation/Styles/images/wn-pattern-bg-red.jpg'); /*ImageEmbed:skip*/
+    }
+
+    &--senary {
+        background-image: url('//cdn.worldnomads.net/Media/Default/images/wn-pattern-bg-yellow.jpg'); /*ImageEmbed:skip*/
+    }
+
+    &--monoDark {
+        background-image: url('//cdn.worldnomads.net/Media/Default/images/wn-pattern-bg-grey.jpg'); /*ImageEmbed:skip*/
+    }
+
+    &--secondary,
+    &--tertiary,
+    &--quarternary,
+    &--quinary,
+    &--senary,
+    &--monoDark {
+        h1, h2, h3, h4, h5, h6, p, a, label, li {
+            color: $color-mono-xxxlight;
+        }
+    }
+
+    &--monoLight {
+        background-image: url('//cdn.worldnomads.net/Media/Default/images/wn-pattern-bg-white.jpg'); /*ImageEmbed:skip*/
+    }
+}

@@ -1,0 +1,119 @@
+.travelInsurance {
+    &-content {
+        #cover-table {
+            margin-bottom: 1.5rem;
+        }
+
+        .email-default-signup {
+            label {
+                color: $color-mono-xxxlight;
+            }
+        }
+    }
+
+    &-cover {
+        &-hiking {
+            background-image: url('//cdn.worldnomads.net/Media/Default/TravelInsuranceImages/australia/hiking-thumb.jpg');
+        }
+
+        &-diving {
+            background-image: url('//cdn.worldnomads.net/Media/Default/TravelInsuranceImages/australia/diving-thumb.jpg');
+        }
+
+        &-snow {
+            background-image: url('//cdn.worldnomads.net/Media/Default/TravelInsuranceImages/australia/snow-thumb.jpg');
+        }
+
+        &-bike {
+            background-image: url('//cdn.worldnomads.net/Media/Default/TravelInsuranceImages/australia/bike-thumb.jpg');
+        }
+    }
+
+    &-claims {
+        &-argentina {
+            background-image: url('//cdn.worldnomads.net/Media/Default/TravelInsuranceImages/australia/girl-on-bus.jpg');
+        }
+
+        &-bali {
+            background-image: url('//cdn.worldnomads.net/Media/Default/TravelInsuranceImages/australia/surfer-guy.jpg');
+        }
+    }
+
+    .Hero {
+        background-image: url('//cdn.worldnomads.net/Media/Default/TravelInsuranceImages/australia/hero_travel-insurance-au_mobile.jpg');
+        background-position: bottom center;
+
+        #wnqqcalculator {
+            margin-top: 0 !important;
+
+            h2 {
+                margin-bottom: 0;
+                color: $color-mono-xxdark;
+            }
+        }
+
+        .country-of-residence {
+            a {
+                color: $color-secondary;
+                font-size: 14px;
+                font-weight: 300;
+                text-decoration: underline;
+            }
+        }
+
+        @media only screen and (min-width: 40.063em) {
+            min-height: 440px;
+            background-image: url('//cdn.worldnomads.net/Media/Default/TravelInsuranceImages/australia/hero_travel-insurance-au_tablet.jpg');
+            background-position: bottom center;
+        }
+
+        @media only screen and (min-width: 64.063em) {
+            min-height: 550px;
+            background-image: url('//cdn.worldnomads.net/Media/Default/TravelInsuranceImages/australia/hero_travel-insurance-au_full.jpg');
+            background-position: bottom center;
+        }
+    }
+
+    .modal {
+        &-backdrop {
+            background: rgba(0, 0, 0, .6);
+        }
+
+        &-content {
+            padding: 30px 16px;
+        }
+
+        &-dialog {
+            .close {
+                background: none;
+
+                &::after {
+                    color: $font-color;
+                    font-family: wn-icomoon;
+                    content: '\f00d';
+                }
+            }
+
+            h3 {
+                width: 95%;
+                color: $font-color;
+                line-height: 100%;
+            }
+
+            ul {
+                list-style: none;
+
+                > li {
+                    margin-bottom: 16px;
+                    margin-left: 24px;
+                    list-style-type: disc;
+                }
+            }
+        }
+
+        @media all and (max-width: 40.063em) {
+            height: 340px;
+            overflow-y: scroll;
+        }
+    }
+}
