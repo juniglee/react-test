@@ -1595,6 +1595,10 @@
 	            formValues[x.name] = x.value;
 	        });
 
+	        var heroHeader = formValues["cm-f-ahkkjr"] ? 'Hi ' + formValues["cm-f-ahkkjr"] : 'Welcome Nomad!';
+
+	        var heroSubHeader = this.state.editState ? 'Thanks for subscribing and joining our community of passionate travelers.' : '';
+
 	        var futureTripsDestination;
 
 	        if (formValues["cm-fo-ahkkjt"]) {
@@ -1610,7 +1614,7 @@
 	        return _react2.default.createElement(
 	            "div",
 	            null,
-	            _react2.default.createElement(Hero, { header: this.state.heroHeader, subHeader: this.state.heroSubHeader }),
+	            _react2.default.createElement(Hero, { header: heroHeader, subHeader: heroSubHeader }),
 	            _react2.default.createElement(
 	                "section",
 	                { className: "subscribeForm" },

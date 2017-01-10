@@ -343,6 +343,10 @@ var SubmissionForm = React.createClass({
             formValues[x.name] = x.value
         });
 
+        var heroHeader = formValues["cm-f-ahkkjr"] ? 'Hi ' + formValues["cm-f-ahkkjr"] : 'Welcome Nomad!';
+
+        var heroSubHeader = this.state.editState ? 'Thanks for subscribing and joining our community of passionate travelers.' : '';
+
         var futureTripsDestination;
 
         if (formValues["cm-fo-ahkkjt"]) {
@@ -357,7 +361,7 @@ var SubmissionForm = React.createClass({
 
         return (
             <div>
-                <Hero header={this.state.heroHeader} subHeader={this.state.heroSubHeader} />
+                <Hero header={heroHeader} subHeader={heroSubHeader} />
                 <section className="subscribeForm">
                     <form id="subForm" className="form" onSubmit={this.submit}>
                         <div className="row">
