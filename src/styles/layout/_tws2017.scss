@@ -1,0 +1,202 @@
+.tws2017 {
+    h1, h4 { // base override
+        font-weight: $font-weight-bold;
+    }
+
+    .Hero {
+        margin-bottom: 0;
+        background: url('/Media/Default/images/tws-2017-hero.jpg') no-repeat;
+        background-position: 85% 0%;
+        background-size: cover;
+
+        &-container {
+            padding-top: 100px;
+
+            @media #{$medium-up} {
+                padding-top: 0;
+            }
+        }
+    }
+
+    &-intro {
+        text-align: center;
+    }
+
+    &-prizes {
+        background-color: $body-color-dark;
+        text-align: center;
+
+        .callout {
+            min-height: 200px;
+
+            @media #{$medium-up} {
+                min-height: 280px;
+            }
+        }
+
+        [class^="icon-wn-"] {
+            color: $color-tertiary;
+
+            @media #{$medium-up} {
+                &::before {
+                    font-size: $icon-size-md;
+                }
+            }
+        }
+    }
+
+    &-apply {
+        counter-reset: tws2017-apply-steps;
+
+        &-header {
+            margin-bottom: 40px;
+        }
+
+        &-steps {
+            position: relative;
+            padding-left: 40px;
+
+            &::before {
+                position: absolute;
+                top: -6px;
+                left: 0;
+                width: 32px;
+                border: 1px solid $color-tertiary;
+                border-radius: 500px;
+                color: $color-tertiary;
+                line-height: 32px;
+                text-align: center;
+                box-shadow: inset 0 0 1px $color-tertiary;
+                content: counter(tws2017-apply-steps);
+                counter-increment: tws2017-apply-steps;
+            }
+
+        }
+
+        &-countdown {
+            #countbox {
+                #days,
+                #hours,
+                #mins {
+                    margin-bottom: 8px;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                    background-color: $color-tertiary;
+                    color: $color-mono-xxxlight;
+                    font-size: 32px;
+                    font-weight: $font-weight-bold;
+                }
+
+                #days_text,
+                #hours_text,
+                #mins_text {
+                    color: $color-mono-xxxlight;
+                    font-size: 14px;
+                }
+
+                #days {
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                }
+
+                #mins {
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                }
+            }
+        }
+
+        &-dates {
+            &-header {
+                margin-bottom: 20px;
+            }
+
+            @media #{$medium-up} {
+                border: 0;
+
+                &-header {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+
+    &-judging {
+        background-color: $body-color-dark;
+
+        &-criteria {
+            display: inline-block;
+            margin-left: 0;
+
+            .tws2017-judging-criteria-item {
+                position: relative;
+                padding: 0 40px;
+                font-weight: $font-weight-bold;
+
+                &::before {
+                    position: absolute;
+                    top: 1px;
+                    left: 0;
+                    border-color: $color-success;
+                    color: $color-success;
+                    font-family: wn-icomoon;
+                    font-size: $font-size-sml;
+                    content: '\f00c';
+
+                    @media #{$medium-up} {
+                        top: 3px;
+                    }
+                }
+
+                &:hover {
+                    &::before {
+                        border-color: $color-success;
+                        color: $color-success;
+                    }
+                }
+
+                @media #{$medium-up} {
+                    width: 50%;
+                    float: left;
+                }
+            }
+
+            @media #{$medium-up} {
+                margin-bottom: 20px;
+            }
+        }
+
+        &-faq {
+            position: relative;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $border-color;
+
+            &-header {
+                width: 90%;
+                cursor: pointer;
+            }
+
+            &-content {
+                display: none;
+                width: 90%;
+            }
+
+            [class^="icon-wn-"] {
+                &::before {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    color: $color-secondary;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    &-inspiration {
+        .Promo {
+            margin-bottom: 20px;
+        }
+    }
+}
+

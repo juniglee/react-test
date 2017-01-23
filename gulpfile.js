@@ -12,6 +12,8 @@ var pixrem = require('pixrem');
 var colorRgbaFallback = require("postcss-color-rgba-fallback");
 var opacity = require("postcss-opacity");
 var uglify = require('gulp-uglify');
+var pug = require('gulp-pug');
+var gulpPugBeautify = require('gulp-pug-beautify');
 var pump = require('pump');
 
 var sassPath = 'src/styles/';
@@ -95,6 +97,23 @@ gulp.task('zetzer', function(){
   .pipe(browserSync.stream());
 });
 
+gulp.task('pug', function() {
+  gulp.src([
+    'src/html/pug/*.pug'
+  ],
+  {base: 'src/html/'})
+  .pipe(pug({
+    pretty: true
+  }))
+  .pipe(gulpPugBeautify({
+    omit_empty_lines: true,
+    fill_tab: false,
+    tab_size: 4
+  }))
+  .pipe(gulp.dest('dist'))
+  .pipe(browserSync.stream());
+});
+
 // Env. Tasks
 gulp.task('browser-sync', function() {
     browserSync.init({
@@ -105,9 +124,10 @@ gulp.task('browser-sync', function() {
     })
 });
 
-gulp.task('default', ['browser-sync', 'webpack', 'compress', 'postcss', 'zetzer'], function() {
+gulp.task('default', ['browser-sync', 'webpack', 'compress', 'postcss', 'zetzer', 'pug'], function() {
   gulp.watch(sassPath + '**/*.+(scss|sass)', ['postcss']);
   gulp.watch(jsPath + '**/*.jsx', ['webpack']);
   gulp.watch(htmlPath + '**/*.html', ['zetzer']);
+  gulp.watch(htmlPath + '**/*.pug', ['pug']);
   gulp.watch(jsPath + '**/*.js', ['compress']);
 });

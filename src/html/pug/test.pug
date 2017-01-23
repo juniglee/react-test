@@ -1,0 +1,14 @@
+extends includes/template.pug
+
+block variables
+    - var title = "some title";
+    - var description = "document test";
+
+block body
+    section.Hero
+        .row
+            .Hero-container
+                .small-12.medium-8.large-6
+                    h1.Hero-copy This is a hero header text
+                    h4.Hero-copy This is a hero subheader text
+                    a.button.primary.arrow This is a button

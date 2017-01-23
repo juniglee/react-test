@@ -1,0 +1,15 @@
+extends includes/template.pug
+
+block variables
+    - var description = "Thanks for subscribing and joining our community of passionate travelers.";
+    - var title = "Welcome Nomad!";
+
+block body
+    #submissionForm
+        script(type="text/javascript" src="/js/main.js")
+        script(type="text/javascript" src="//cdn.worldnomads.net/Scripts/jquery/datepicker/jquery.datePicker.js")
+        script(type="text/javascript" src="//cdn.worldnomads.net/Scripts/jquery/datepicker/jquery.datePickerForSelects.js")
+        script.
+            $(document).ready(function() {
+                $('#fieldzjiyhl-y').prop('checked', true);
+            });

@@ -1,0 +1,274 @@
+extends includes/template.pug
+
+block variables
+    - var description = "Travel Writing Scholarship 2017 - WIN a 10-day writing road trip across the Balkans";
+    - var title = "World Nomads Travel Writing Scholarship 2017";
+
+block body
+    article.tws2017
+        section.Hero
+            .row
+                .small-12.medium-8.large-6.columns
+                    .Hero-container
+                        .Hero-container-inner
+                            h1.Hero-copy Win a 10-day writing road trip across the Balkans!
+                            h3.Hero-copy Plus be mentored by Lorem Ipsum dolor sit amed
+                            a.button.primary.arrow.large(href="#") Apply now
+                    .tws2017-partners
+                        p.Hero-copy
+                            small In partnership with:
+                        ul.scholarships-partners-list
+                            li
+                                a(href="http://www.intrepidtravel.com")
+                                    img.partnerLogo(src="//cdn.worldnomads.net/Media/Default/LearnImages/photo2016/TPS2016_HeroPartner_intrepid.png" alt="Intrepid")
+                            li
+                                a(href="http://www.airgreenland.com/")
+                                    img.partnerLogo(src="//cdn.worldnomads.net/Media/Default/LearnImages/photo2016/TPS2016_HeroPartner_touradar.png?3" alt="Tour Radar")
+                            li
+                                a(href="http://www.kathmandu.com.au/")
+                                    img.partnerLogo(src="//cdn.worldnomads.net/Media/Default/LearnImages/photo2016/TPS2016_HeroPartner_katmandu.png?4" alt="Kathmandu")
+        #sharetools-long
+            .row
+                include includes/sharetools.pug
+        section.tws2017-intro
+            .row
+                .small-12.columns
+                    h2 Ever wondered what it would be like on assignment as a travel writer?
+                    p This is your chance to win an all-expenses-paid trip to the Balkans and be mentored by professional travel writer, Lorem Ipsum.
+                    p From the landscapes of Serbia to the churches of Montenegro, The Balkans is the perfect place for story tellers.
+                    h4 Watch the video below to see how to apply
+                    h4 Ready to apply?
+                    a.button.primary.arrow(href="#") Apply now
+        section.tws2017-prizes.segment-pad.segment-margin
+            .row
+                .small-12.columns
+                    h2 All these prizes could be yours
+                    p The 3 scholarship recipients will receive
+            .row
+                .small-12.medium-6.large-3.columns
+                    .callout.light
+                        p
+                            span.icon-wn-writing.Icon--sml
+                        h4 A 3-day custom travelwriting course
+                        p
+                            | under the mentorship of 
+                            a( href="#") Lonely Planet 
+                            | author John Vlahides
+                .small-12.medium-6.large-3.columns
+                    .callout.light
+                        p
+                            span.icon-wn-location.Icon--sml
+                        h4 $3000 AUD to spend on your 10-day road trip
+                        p
+                            | PLUS 3 
+                            a(href="#") Urban Adventures 
+                            | day tours and free campervan rental courtesy of 
+                            a(href="#") Travellers Autobarn
+                            | !
+                .small-12.medium-6.large-3.columns
+                    .callout.light
+                        p
+                            span.icon-wn-flight.Icon--sml
+                        h4 Free flights and accomodation
+                        p
+                            | Our friends at 
+                            a(href="#") YHA Australia 
+                            | have got your accomodation covered.
+                .small-12.medium-6.large-3.columns
+                    .callout.light
+                        p
+                            span.icon-wn-umbrella.Icon--sml
+                        h4 Travel Insurance
+                        p
+                            | As always, we've got your back. You'll receive travel insurance for the duration of your trip from 
+                            a(href="#") World Nomads.
+
+            .row
+                .small-12.columns
+                    .tws2017-partners
+                        ul.scholarships-partners-list
+                            li
+                                a(href="http://www.intrepidtravel.com")
+                                    img.partnerLogo(src="//cdn.worldnomads.net/Media/Default/LearnImages/photo2016/TPS2016_HeroPartner_intrepid.png" alt="Intrepid")
+                            li
+                                a(href="http://www.airgreenland.com/")
+                                    img.partnerLogo(src="//cdn.worldnomads.net/Media/Default/LearnImages/photo2016/TPS2016_HeroPartner_touradar.png?3" alt="Tour Radar")
+                            li
+                                a(href="http://www.kathmandu.com.au/")
+                                    img.partnerLogo(src="//cdn.worldnomads.net/Media/Default/LearnImages/photo2016/TPS2016_HeroPartner_katmandu.png?4" alt="Kathmandu")
+        section.tws2017-apply
+            .row
+                .small-12.medium-6.large-8.column
+                    h2.tws2017-apply-header How do I apply?
+                    .tws2017-apply-steps
+                        h4 Write about your discovery
+                        p Biodiesel prism slow-carb poke franzen, chartreuse iceland butcher. Selfies tbh dreamcatcher shoreditch. VHS fap jianbing, ennui retro tbh wolf enamel pin af photo booth pitchfork.
+                    .tws2017-apply-steps
+                        h4 Plan your itinerary
+                        p Biodiesel prism slow-carb poke franzen, chartreuse iceland butcher. Selfies tbh dreamcatcher shoreditch. VHS fap jianbing, ennui retro tbh wolf enamel pin af photo booth pitchfork.
+                    .tws2017-apply-steps
+                        h4 Tell us how this trip would benefit you?
+                        p Biodiesel prism slow-carb poke franzen, chartreuse iceland butcher. Selfies tbh dreamcatcher shoreditch. VHS fap jianbing, ennui retro tbh wolf enamel pin af photo booth pitchfork.
+                    p Strictly one application per person
+                    .row
+                        .small-6.column
+                            h4 Ready to apply?
+                        .small-6.column
+                            a.button.primary.arrow.small(href="#") Apply now
+                .small-12.medium-6.large-4.column
+                    .tws2017-apply-countdown.callout
+                        h3 Applications close in...
+                        #countbox
+                        p
+                            small
+                                | Apply by February 14, 2017 at 11PM 
+                                a(href="http://www.timeanddate.com/time/zones/est")(EST)
+                    .tws2017-apply-reminder.panel.Pattern.Pattern--monoDark
+                        h2 Remind me
+                        p
+                            | Not ready to apply yet?
+                            br
+                            | We'll send you a reminder to apply for this scholarship in 10 days.
+            .row.SectionBreak.SectionBreak--sml
+                .small-12.columns
+                    .tws2017-apply-dates
+                        h3.tws2017-apply-dates-header Important dates
+                        .row
+                            .small-12.medium-3.columns
+                                // Date
+                                .Calendar.Calendar--alt.Calendar--tertiary
+                                    .Calendar-date
+                                        .Calendar-date-day 14
+                                        span.Calendar-date-month Feb
+                                    .Calendar-info
+                                        h3.Calendar-info-text Applications close
+                                // Date END
+                            .small-12.medium-3.columns
+                                // Date
+                                .Calendar.Calendar--alt.Calendar--tertiary
+                                    .Calendar-date
+                                        .Calendar-date-day 12
+                                        span.Calendar-date-month Mar
+                                    .Calendar-info
+                                        h3.Calendar-info-text Winner announced
+                                // Date END
+                            .small-12.medium-3.columns
+                                // Date
+                                .Calendar.Calendar--alt.Calendar--tertiary
+                                    .Calendar-date
+                                        .Calendar-date-day 10
+                                        span.Calendar-date-month Apr
+                                    .Calendar-info
+                                        h3.Calendar-info-text Workshop in Montenegro
+                                // Date END
+                            .small-12.medium-3.columns
+                                // Date
+                                .Calendar.Calendar--alt.Calendar--tertiary
+                                    .Calendar-date
+                                        .Calendar-date-day 14
+                                        span.Calendar-date-month Apr
+                                    .Calendar-info
+                                        h3.Calendar-info-text Road Trip to The Balkans
+                                // Date END
+            section.tws2017-judging.segment-pad.segment-margin
+                .row
+                    .small-12.medium-6.large-8.columns
+                        h2 What are the Judges looking for?
+                        p
+                            | You'll need to convince our judging panel through your writing that you have the spirit of adventure and passion for travel writing to be chosen for this scholarship.
+                        ul.tws2017-judging-criteria.medium-block-grid-2
+                            li.tws2017-judging-criteria-item.Icon--sml.Icon--circle
+                                | Great descriptive ability (without getting flowery)
+                            li.tws2017-judging-criteria-item.Icon--sml.Icon--circle
+                                | Strong eye for detail. Add more text for two levels.
+                            li.tws2017-judging-criteria-item.Icon--sml.Icon--circle
+                                | Ability to uncover a great travel story and tell it in a compelling way
+                            li.tws2017-judging-criteria-item.Icon--sml.Icon--circle
+                                | Excellent spelling and grammar and a knack for avoiding cliches
+                        p
+                            | The 3 recipients of the Scholarship, along with the shortlist of best entries will be published on the WorldNomads.com website on July 15th, 2017.
+                    .small-12.medium-6.large-4.columns
+                        .panel.Pattern.Pattern--monoDark
+                            h2 Pssst!
+                            p
+                                | Get FREE travel writing tips from a 
+                                a(href='#') Lonely Planet
+                                |  author:
+                            |                     {{= it.include("default-scholarship-form.html") }}
+                .row.SectionBreak.SectionBreak--sml
+                    .small-12.medium-6.large-8.columns
+                        h2 FAQ
+                        p
+                            | We've listed the top three questions here.
+                            br
+                            | Still have more questions? Check our 
+                            a(href='#') FAQ page
+                            | .
+                        .tws2017-judging-faq
+                            h4.tws2017-judging-faq-header(data-faq-question='q1')
+                                | Am I considered a professional travel writer?
+                                span.icon-wn-plus
+                            p.tws2017-judging-faq-content(data-faq-answer='q1') Lorem ipsum sit dolor amet
+                        .tws2017-judging-faq
+                            h4.tws2017-judging-faq-header(data-faq-question='q2')
+                                | Do I have to travel solo? Can I bring a travel companion along with me, even if it's just for the road trip?
+                                span.icon-wn-plus
+                            p.tws2017-judging-faq-content(data-faq-answer='q2') Lorem ipsum sit dolor amet
+                        .tws2017-judging-faq
+                            h4.tws2017-judging-faq-header(data-faq-question='q3')
+                                | I have a problem submitting my application. Can I email my application to you? Help!
+                                span.icon-wn-plus
+                            p.tws2017-judging-faq-content(data-faq-answer='q3') Lorem ipsum sit dolor amet
+                    .small-12.medium-6.large-4.columns
+                        .tws2017-judging-apply.callout.light
+                            h3 Do you still have questions or are you ready to apply?
+                            .row
+                                .small-12.medium-6.columns
+                                    a.button.alt-dark.expanded(href='#') See FAQ
+                                .small-12.medium-6.columns
+                                    a.button.primary.arrow.expanded(href='#') Apply Now
+            section.tws2017-inspiration
+                .row
+                    .small-12.columns
+                        h2 Looking for Inspiration?
+                        p Check out some of our past winners and meet your mentor:
+                .row
+                    .small-12.medium-6.large-3.columns
+                        .Promo.Promo--minor
+                            .Promo-media
+                            .Promo-content
+                                h3.Promo-copy.Promo-title Angry Birds
+                                p.Promo-copy To see how you're covered this holiday season, check out our quote calculator.
+                                button.button.small.alt-light Check this story
+                    .small-12.medium-6.large-3.columns
+                        .Promo.Promo--minor
+                            .Promo-media
+                            .Promo-content
+                                h3.Promo-copy.Promo-title Angry Birds
+                                p.Promo-copy To see how you're covered this holiday season, check out our quote calculator.
+                                button.button.small.alt-light Check this story
+                    .small-12.medium-6.large-3.columns
+                        .Promo.Promo--minor
+                            .Promo-media
+                            .Promo-content
+                                h3.Promo-copy.Promo-title Angry Birds
+                                p.Promo-copy To see how you're covered this holiday season, check out our quote calculator.
+                                button.button.small.alt-light Check this story
+                    .small-12.medium-6.large-3.columns
+                        .Promo.Promo--minor
+                            .Promo-media
+                            .Promo-content
+                                h3.Promo-copy.Promo-title Angry Birds
+                                p.Promo-copy To see how you're covered this holiday season, check out our quote calculator.
+                                button.button.small.alt-light Check this story
+
+
+block scripts
+    script(type="text/javascript").
+        var year = 2017;
+        var month = 02;
+        var day = 14;
+        var hour= 14;
+        var min= 0;
+        var sec= 0;
+    script(type="text/javascript" src="//cdn.worldnomads.net/Media/Default/scripts/js/counter-countdown.js")

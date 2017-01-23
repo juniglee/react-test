@@ -1,0 +1,83 @@
+.zone.zone-header
+    article.widget-testnav.widget-header.widget-kosmos-nav-widget.widget
+        .sticky-header(data-threshold='300')
+            a.logo(href='/') World Nomads
+        .side-nav.closed
+            .signed-out
+                .side-nav-list
+                    ul
+                        li.side-nav-sign-in-form.open
+                            form(action='/Member/SignIn?returnUrl=/Member' method='post' _lpchecked='1')
+                                .input-group.full-width.no-label
+                                    input#AuthenticationRequestDto_EmailAddress(name="AuthenticationRequestDto.EmailAddress" placeholder="Email address" type="text" value="")
+                                .input-group.full-width-no-label
+                                    input#AuthenticationRequestDto_Password(name="AuthenticationRequestDto.Password" placeholder="Password" type="password")
+                                .actions
+                                    .input-group
+                                        input#after-sign-in-return-url(type="hidden" name="returnUrl")
+                                        button.button-primary.button.primary Sign in
+                                    .input-group.forgotten-password
+                                        a.load-by-ajax(data-analytics-id="popup-forgot-password" href="/Member/ForgotPassword") Forgotten password?
+                                    .input-group.verify-guest
+                                        .verify-guest-query
+                                            | Bought as a guest?
+                                            a(data-analytics-id="verify-guest" href="/Member/VerifyGuest") Create an account
+                                .session-tokens
+                    ul
+                        li
+                            a.side-nav-a(href="/travel-insurance")
+                                span.Icon--sml.icon-wn-umbrella
+                                label Travel Insurance
+                                span.description.tablet-up Simple &amp; flexible travel insurance for your next adventure.
+                        li
+                            a.side-nav-a(href="/travel-safety")
+                                span.Icon--sml.icon-wn-lightbulb
+                                label Travel Smart
+                                span.description.tablet-up Insights to help you navigate the risks &amp; find the safer path.
+                        li
+                            a.side-nav-a(href="/explore")
+                                span.Icon--sml.icon-wn-navigation
+                                label Explore
+                                span.description.tablet-up Discover your next adventure with tips &amp; advice from the locals.
+                        li
+                            a.side-nav-a(href="/learn/")
+                                span.Icon--sml.icon-wn-book
+                                label Scholarships
+                                span.description.tablet-up Opportunities to travel &amp; create.
+                        li
+                            a.side-nav-a(href="//answers.worldnomads.com")
+                                span.Icon--sml.icon-wn-bubbles
+                                label Community
+                                span.description.tablet-up Tap into the knowledge of other travellers or share your expertise.
+                        li
+                            a.side-nav-a(href="/make-a-difference")
+                                span.Icon--sml.icon-wn-heart
+                                label Change Lives
+                                span.description.tablet-up Discover how travellers have helped change peoples lives.
+                        li
+                            a.side-nav-a(href="//help[desk.worldnomads.com")
+                                span.Icon--sml.icon-wn-roaddirections
+                                label Help Desk
+                                span.description.tablet-up Everything you need to know. We're here to help.
+                .bottom-links
+                    ul
+        .side-nav-arrow
+        .side-nav-toggle
+            span
+        .side-nav-sign-in
+            a.login(href="https://www.worldnomads.com/Member/OpenSignIn") Sign In
+            span.existing-member Existing Member?
+        .side-nav-close-panel
+        ul.top-links
+            li
+                a(href="http://service.worldnomads.com/") Help Desk
+            li.hide-first
+                a(href="/make-a-difference") Change Lives
+            li.hide-first
+                a(href="http://answers.worldnomads.com") Community
+            li.hide-second
+                a(href="/learn") Scholarships
+            li
+                a(href="//www.worldnomads.com/travel-safety") Travel Smart
+            li
+                a(href="/travel-insurance") Travel Insurance
